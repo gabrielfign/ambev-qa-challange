@@ -33,13 +33,16 @@ Para executar o projeto, siga os passos abaixo:
 ``npm install``
 
 ## 📝 Uso Instruções de Uso
-1. Para usar o projeto por feature ou ambiente, siga os passos abaixo:
+1. Para rodar os testes e gerar o relatório Mochawesome, siga os passos abaixo:
  ```bash 
- # Cypress Test Headless
+ # gera o relatório
  npm test
  # Cypress Test Runner
  npm run cy:open
 ``` 
+
+O relatório fica em `cypress/reports/html/index.html`.
+
 ![report-mocha](image.png)
 
 ## 📫 Contribuir Para contribuir com o projeto, siga estas etapas: 
