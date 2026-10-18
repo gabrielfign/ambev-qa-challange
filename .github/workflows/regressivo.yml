@@ -1,0 +1,25 @@
+name: regressivo
+
+on:
+  schedule:
+    # 08:00 em São Paulo
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: cypress-io/github-action@v6
+        with:
+          node-version: 22
+          browser: chrome
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: relatorio-mochawesome
+          path: cypress/reports/html/index.html
+          if-no-files-found: ignore
