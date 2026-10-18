@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run --browser chrome"
+    "test": "cypress run --browser chrome",
+    "test:api": "cypress run --browser chrome --spec cypress/e2e/api/**/*.cy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "10.6.0",
     "cypress": "16.2.0"
   }
 }
