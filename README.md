@@ -54,6 +54,10 @@ O relatório fica em `cypress/reports/html/index.html`.
 5. Abra um Pull Request para o main. Alternativamente, veja a documentação do GitHub em [como criar um pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). 
 
 
+## 🤖 IA
+
+Poucas partes deste projeto foram feitas com apoio de IA. Uma delas foi o CI/CD.
+
 ## 🤝 Contato Informações
 Gabriel Figueiredo<br>
 Email: gabrielgsfigueiredo@gmail.com<br>
